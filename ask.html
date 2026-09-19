@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ask BrightSmile — BrightSmile Dental</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <img src="logo.svg" alt="BrightSmile Dental logo" class="logo">
+          <span class="brand-name">BrightSmile Dental</span>
+        </a>
+        <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <nav id="primary-nav" class="nav" role="navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="ask.html" class="cta">Ask BrightSmile</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container ask-page">
+      <h1>How can we help?</h1>
+      <p class="lead">Ask a question about our services, appointments, opening hours or dental care.</p>
+
+      <section class="chat-card" aria-label="Chat with BrightSmile assistant">
+        <div id="chat" class="chat-history" role="log" aria-live="polite">
+          <div class="message assistant">
+            <div class="message-content">Hi, I'm the BrightSmile Dental assistant. How can I help?</div>
+          </div>
+        </div>
+
+        <form id="chat-form" class="chat-form" action="#" onsubmit="return false;">
+          <label for="message" class="visually-hidden">Your question</label>
+          <input id="message" name="message" type="text" placeholder="Type your question..." autocomplete="off" required>
+          <button id="send" class="send-btn" type="submit">Send</button>
+        </form>
+
+        <div class="examples">
+          <p>Example questions:</p>
+          <div class="example-list">
+            <button class="example">What services do you offer?</button>
+            <button class="example">What are your opening hours?</button>
+            <button class="example">Do you offer teeth whitening?</button>
+            <button class="example">How do I book an appointment?</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 BrightSmile Dental — Demo site.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
