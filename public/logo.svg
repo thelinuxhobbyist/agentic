@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="BrightSmile Dental logo">
-  <rect width="120" height="120" rx="20" fill="#f7fbff"/>
+  <rect width="120" height="120" rx="20" fill="#dff3fb"/>
   <g transform="translate(20,22)">
     <path d="M12 46 C 24 12, 58 12, 70 46" stroke="#086f95" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="22" cy="24" r="6" fill="#0b8fbe"/>

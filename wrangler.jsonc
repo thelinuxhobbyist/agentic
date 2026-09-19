@@ -1,0 +1,20 @@
+{
+  "name": "brightsmile-dental",
+  "compatibility_date": "2026-09-19",
+  "assets": {
+    "directory": "./public/",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 0.01
+    }
+  }
+}

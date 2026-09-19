@@ -2,36 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BrightSmile Dental</title>
-    <!-- Fonts: Poppins for headings, Inter for body -->
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" class="brand">
-          <img src="logo.svg" alt="BrightSmile Dental logo" class="logo">
+        <a href="/" class="brand">
+          <img src="/logo.svg" alt="" class="logo">
           <span class="brand-name">BrightSmile Dental</span>
         </a>
-        <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle menu">☰</button>
-        <nav id="primary-nav" class="nav" role="navigation">
-          <a href="index.html">Home</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-          <a href="ask.html" class="cta">Ask BrightSmile</a>
+        <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+          <span class="menu-toggle-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav id="primary-nav" class="nav" aria-label="Primary">
+          <a href="/" aria-current="page">Home</a>
+          <a href="/#services">Services</a>
+          <a href="/#contact">Contact</a>
+          <a href="/ask" class="cta">Ask BrightSmile</a>
         </nav>
       </div>
     </header>
+    <div class="nav-backdrop"></div>
 
-    <main>
+    <main id="main">
       <section class="hero">
         <div class="container">
-          <h1>BrightSmile Dental</h1>
-          <p class="lead">Friendly, professional dental care for you and your family.</p>
-          <p>Learn about our practice, services, and how to make appointments. Use our assistant to ask quick questions.</p>
-          <p><a class="primary-btn" href="ask.html">Ask our dental assistant</a></p>
+          <h1>Friendly dental care for the whole family</h1>
+          <p class="lead">BrightSmile Dental offers check-ups, hygiene, whitening and emergency appointments in a calm, modern practice.</p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="/ask">Ask our dental assistant</a>
+            <a class="secondary-btn" href="/#contact">Book by phone</a>
+          </div>
         </div>
       </section>
 
@@ -59,7 +69,7 @@
             <p>Durable crowns to restore damaged teeth.</p>
           </article>
           <article>
-            <h3>Emergency dental appointments</h3>
+            <h3>Emergency appointments</h3>
             <p>Emergency slots for urgent dental problems.</p>
           </article>
         </div>
@@ -99,11 +109,17 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container">
+      <div class="container footer-inner">
         <p>&copy; 2026 BrightSmile Dental — Demo site.</p>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="/">Home</a>
+          <a href="/#services">Services</a>
+          <a href="/#contact">Contact</a>
+          <a href="/ask">Ask BrightSmile</a>
+        </nav>
       </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="/app.js"></script>
   </body>
 </html>
